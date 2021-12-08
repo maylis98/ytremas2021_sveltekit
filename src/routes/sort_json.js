@@ -1,3 +1,3 @@
-<script>
-    import {  } from "../../static/contents/projects.json";
-</script>
+{/* <script>
+    import json from "../../static/contents/projects.json";
+</script> */}
