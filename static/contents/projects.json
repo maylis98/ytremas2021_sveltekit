@@ -1,0 +1,221 @@
+[ 
+    {
+        "id": 1,
+        "title" : "Tout Bleu", 
+        "type":"Video clip",
+        "date":"2021",
+        "field": [
+            "Virtual production",
+            "CGI",
+            "Storytelling"
+        ],
+        "package": [
+            "Video clip"
+        ],
+        "content":[
+            "Pointclouds landscape",
+            "Photogrammetry",
+            "SFX"
+        ],
+        "spec": {
+            "fonts":[""],
+            "format":[
+                "16:9"
+            ],
+            "media":[""]
+        },
+        "description" : "Bidule is a video clip based on the music band ToutBleu. It highlights the fluid yet rigourous style of the band",
+        "link":"youtubelink.youtube",
+        "vignette":"vignette-toutbleu.png",
+        "images":[
+            "imgs1.png",
+            "imgs2.png",
+            "imgs3.png"
+        ],
+        "videos":[
+            "video1.mp4",
+            "video2.mp4"
+        ]
+    },
+
+    {
+        "id": 2,
+        "title" : "Blind Rumors", 
+        "type":"Installation",
+        "date":"2021",
+        "field": [
+            "Numerik Games Festival 2021",
+            "VR",
+            "Visual Identity",
+            "Space design"
+        ],
+        "package": [
+            "VR game",
+            "Floor scenography",
+            "Communication set"
+        ],
+        "content":[
+            "VR headset",
+            "Virtual spatial sounds & lights",
+            "Stickers",
+            "Video clip",
+            "Flyers",
+            "Voice-Over"
+        ],
+        "spec": {
+            "fonts":[
+                "PX Grotestk by Optimo"
+            ],
+            "format":[
+                "16:9",
+                "Available on Oculus Quest 1",
+                "42 x 59,5 cm (poster",
+                "21 x 14,8 cm (flyer)"
+            ],
+            "media":[
+                "Munken Pure 250gm"
+            ]
+        },
+        "description" : "Blind Rumors aims at understand how multiple comments create a fact by sprading the information",
+        "link":"numerikgame.link",
+        "vignette":"vignette-blindrumors.png",
+        "images":[
+            "imgs1.png",
+            "imgs2.png",
+            "imgs3.png"
+        ],
+        "videos":[
+            "video1.mp4",
+            "video2.mp4"
+        ]
+    },
+
+    {
+        "id": 3,
+        "title" : "Highway", 
+        "type":"VR game",
+        "date":"2020",
+        "field": [
+            "VR",
+            "Storytelling"
+        ],
+        "package": [
+            "Puzzle game"
+        ],
+        "content":[
+            "3D models",
+            "Interactive UI"
+        ],
+        "spec": {
+            "fonts":[
+                "Signal by Production Type"
+            ],
+            "format":[
+                "16:9",
+                "Available on Oculus Quest 1"
+            ],
+            "media":[
+                ""
+            ]
+        },
+        "description" : "HighWay compare how the height of your cities condition our feeling of power",
+        "link":"youtubelink.youtube",
+        "vignette":"vignette-highway.png",
+        "images":[
+            "imgs1.png",
+            "imgs2.png",
+            "imgs3.png"
+        ],
+        "videos":[
+            "video1.mp4"
+        ]
+    },
+
+    {
+        "id": 4,
+        "title" : "The Depth of Interface", 
+        "type":"Installation",
+        "date":"2020",
+        "field": [
+            "UI/UX design",
+            "Storytelling",
+            "Programming"
+        ],
+        "package": [
+            "Interactive narration through multiple displays"
+        ],
+        "content":[
+            "P5.js-animations",
+            "Interconnectes screens"
+        ],
+        "spec": {
+            "fonts":[
+                "B612 Mono"
+            ],
+            "format":[
+                "4:3"
+            ],
+            "media":[
+                "3 Ipad Pro 11",
+                "3 LED screens"
+            ]
+        },
+        "description" : "The depth of interface is a narration in which you progress depending on your physical displacement with the screen",
+        "link":"",
+        "vignette":"vignette-depthinterface.png",
+        "images":[
+            "imgs1.png",
+            "imgs2.png",
+            "imgs3.png"
+        ],
+        "videos":[
+            ""
+        ]
+    },
+
+    {
+        "id": 5,
+        "title" : "Uncanny Sublime", 
+        "type":"Video",
+        "date":"2020",
+        "field": [
+            "Distortion Festival 2020",
+            "CGI",
+            "Storytelling",
+            "Editorial design"
+        ],
+        "package": [
+            "Video clip", 
+            "Catalogue of researchs"
+        ],
+        "content":[
+            "ML generated landscapes",
+            "3D scans"
+        ],
+        "spec": {
+            "fonts":[
+                "Tiny 5 x 3 by VT Foundry",
+                "Almarai"
+            ],
+            "format":[
+                "16:9",
+                "19 x 29,7 x 1,5 cm (edition)"
+            ],
+            "media":[
+                "1 LED screen",
+                "Munken Pure 170 gm"
+            ]
+        },
+        "description" : "Uncanny Sublime wonders about how our digital tool think about earthy sole and human trashes in nature.This installation is the result of 2 weeks of inquiries and 3D scans on the field in Geneva, Switzerland. The videos are virtual islands reflecting on the way we think of grounds and roots as things ready to be dug and filled with industrial infrastructure nowdays. Now that humans have become a geological force, how does this affect their perception of another telluric power, nature ?",
+        "link":"trailer.youtube",
+        "vignette":"vignette-uncanny.png",
+        "images":[
+            "imgs1.png",
+            "imgs2.png",
+            "imgs3.png"
+        ],
+        "videos":[
+            ""
+        ]
+    }
+]
