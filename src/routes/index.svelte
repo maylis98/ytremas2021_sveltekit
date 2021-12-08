@@ -3,9 +3,8 @@
   import previous from '../_components/medias/arrow-previous.svg';
   import next from '../_components/medias/arrow-next.svg';
 import { svg_element } from 'svelte/internal';
-import ImageBox from '../_components/ImageBox.svelte';
+import ImageBoxIndex from '../_components/ImageBoxIndex.svelte';
 </script>
-
 
 <svelte:head>
   <link rel="icon" href="/favicon.png" />
@@ -29,7 +28,7 @@ import ImageBox from '../_components/ImageBox.svelte';
 
   <div class="carousel">
 
-    <svelte:component this={ImageBox}/>
+    <svelte:component this={ImageBoxIndex}/>
 
   </div>
 </main>
