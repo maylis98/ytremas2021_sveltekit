@@ -1,0 +1,119 @@
+@font-face {
+	font-family: sneakers-pro;
+	font-weight: 500;
+	font-style: normal;
+	src: url(https://use.typekit.net/llf4aez.css) format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+	
+    /*------------------------------------------------------------
+     | 1.1 COLOR
+     ------------------------------------------------------------*/	
+   
+       /* COLOR PALETTE */
+   
+       --color-n-000: #DBFF00;
+       --color-n-100: #ffffff;
+       --color-n-300: #000000;
+       --color-n-500: #5F5F5F;
+   
+        /* COLOR HIERARCHY */
+      
+        --color-1: var(--color-n-000);
+        --color-2: var(--color-n-100);
+        --color-3: var(--color-n-300);
+    
+        /* typo COLOR */
+    
+        --color-typo-heading: var(--color-n-500);
+        --color-typo-body: var(--color-n-100);
+        --color-typo-note: var(--color-n-100);
+        --color-typo-button: var(--color-n-300);
+   
+    /*------------------------------------------------------------
+     | 1.2 TYPOGRAPHY
+     ------------------------------------------------------------*/
+   
+     /* --typography-labeur: sneakers-pro,sans-serif; */
+   
+     /* FONT SIZE */
+   
+     --typo-h1: 1.9375rem;
+     --typo-h2: 3rem;
+     --typo-p : 1.5rem;
+     --typo-p4: 2rem;
+     --typo-s : .8125rem;
+     --typo-min : 1rem;
+   
+     /* LEADING */
+   
+     --typo-h1-leading: 1.2;
+     --typo-h2-leading: 1.2;
+     --typo-h4-leading: 1.25;
+     --typo-p-leading : 1.5;
+   
+     /* MARGIN */
+   
+     --typo-margin-heading: .75rem;
+     --typo-margin-body   : 1.125rem;
+   
+     /*------------------------------------------------------------
+     | 1.2 LAYOUT
+     ------------------------------------------------------------*/
+   
+     /* CONTAINER */
+     
+     --ui-layout-container: 1.25rem;
+     --ui-layout-container-padding: 1rem;
+     --ui-layout-grid: 3.625rem;
+     --ui-layout-gutter: 1rem;
+   
+     /* BORDER RADIUS */
+     
+     --ui-radius-button: 5rem;
+     --ui-radius-card  : .5rem;
+     
+   }
+
+  /*--------------------------------------------------------------
+  | 2.0 FOUNDATION
+  --------------------------------------------------------------*/
+
+  html { box-sizing: border-box; }
+
+  *,
+*:before,
+*:after { 
+  box-sizing: inherit; 
+  margin: 0;
+  padding: 0;}
+
+  main {
+  background-color: var(--color-2);
+  font-feature-settings: "liga", "kern";
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/*--------------------------------------------------------------
+| 6.2 BUTTON
+--------------------------------------------------------------*/
+
+.component-button {
+  border: .0625rem;
+  border-radius: var(--ui-radius-button);
+  display: block;
+  padding-top :0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left : 1rem;
+  padding-right : 1rem;
+  line-height: 1;
+  text-align: center;
+  color: var(--color-typo-button);
+  background-color:var(--color-n-100);
+}
