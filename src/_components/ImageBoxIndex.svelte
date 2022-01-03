@@ -1,44 +1,36 @@
-<script context="module">
-// import {titles} from "js file that parse the json file and get all the titles of the projects"
-  export async function preload() {
-      const response = await this.fetch('projects.json');
-      const responseJson = await response.json();
-      return {
-          title: responseJson
-      }
-  }
+<script>
+export let title, slug;
 </script>
-
-
+<a href="projects/{slug}">{title}</a>
 
 <div class="carousel-item">
-    <img src="../../static/medias/dog.jpg" loading="lazy" alt="#">
+    <img src="/projects/{slug}/vignette.jpg" loading="lazy" alt="#">
     <div class="title-box">
-
-        <!-- {#each titles as title} -->
-        <!-- <h1>{title}</h1> -->
-        <!-- {/each} -->
-        
+    {title}
     </div>
 </div>
 
 <style>
 
 .carousel-item{
-    height : 52.1rem;
-}   
+    height : 100%;
+    width: calc(100% / 2);
+    position: relative;
+}
 
 .carousel-item > img{
+  position: absolute;
   display: block;
   object-fit: cover;
   width:100%;
   height:100%;
   border-radius: 6rem;
-  z-index: 20;
 }
 
 .title-box{
   margin: auto 0;
+  position: absolute;
+  left: 50%;
 }
 
 
