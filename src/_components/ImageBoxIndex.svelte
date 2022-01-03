@@ -13,8 +13,11 @@ export let title, slug;
 
 .carousel-item{
     height : 100%;
-    width: calc(100%/3);
+    /* width: calc(100%/3); */
     position: relative;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc(100%/3) ;
 }
 
 .carousel-item > img{
@@ -36,7 +39,7 @@ export let title, slug;
   height: 100%;
   font-family: sneakers-pro, sans-serif;
   font-size: var(--typo-h1); 
-  color: var(--color-n-000);
+  color: var(--color-1);
   letter-spacing: 0.05em;
   line-height: var(--typo-h1-leading);
   text-align: center;

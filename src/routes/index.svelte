@@ -19,7 +19,6 @@
   import next from '../_components/medias/arrow-next.svg';
   import { svg_element } from 'svelte/internal';
   import ImageBoxIndex from '../_components/ImageBoxIndex.svelte';
-  import Footer from '../_components/Footer.svelte';
 
 </script>
 
@@ -41,26 +40,24 @@
     </div>
   </div>
 
-  <div class="carousel">
-    {#each projects_list as project}
-      <ImageBoxIndex
-      title={project.title}
-      slug={project.slug}/>
-    {/each}
-
-  </div>
+    <div class="carousel">
+      {#each projects_list as project}
+        <ImageBoxIndex
+        title={project.title}
+        slug={project.slug}/>
+      {/each}
+    </div>
 </main>
 
-<Footer/>
-
 <style>
+
 
 .carousel{
   display: flex;
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  height: 100vh;
+  height: 87.7vh;
   position: relative;
   z-index: 1;
 }
@@ -76,11 +73,11 @@
   justify-content: space-between;
   align-items: center;
   width:100%;
-  height: 95%;
+  height: 92%;
   margin-top: auto;
   margin-bottom:auto;
-  padding: var(--ui-layout-container-padding);
-  padding: var(--ui-layout-container-padding);
+  padding-right: var(--ui-layout-container-padding);
+  padding-left: var(--ui-layout-container-padding);
   /* z-index: 2; */
 }
 

@@ -82,15 +82,6 @@
       font-size: var(--typo-p4);
     }
     
-    .on-left{
-      width: 70%;
-      margin-right: 3rem;
-    }
-    
-    .on-right{
-      text-align: end;
-      text-transform: uppercase;
-    }
     
     @keyframes rotateX {
       0% {

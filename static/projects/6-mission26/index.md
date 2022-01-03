@@ -13,7 +13,6 @@ content:
 link:
   - youtubelink.youtube
 
-# spec:
 fonts:
 - Signal by Production Type
 format:

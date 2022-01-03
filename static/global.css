@@ -38,7 +38,7 @@
    
      --typo-h1: 2.3rem;
      --typo-h2: 3rem;
-     --typo-p : 1.5rem;
+     --typo-p : 1.1rem;
      --typo-p4: 2rem;
      --typo-s : .8125rem;
      --typo-min : 1rem;
@@ -116,4 +116,14 @@
 small { 
   font-family:'Roboto', sans-serif;
   font-size: var(--typo-p); 
+}
+
+.on-left{
+  width: 70%;
+  margin-right: 3rem;
+}
+
+.on-right{
+  text-align: end;
+  text-transform: uppercase;
 }

@@ -12,8 +12,6 @@ content:
   - Interactive UI
 link:
   - youtubelink.youtube
-
-# spec:
 fonts:
 - Signal by Production Type
 format:
