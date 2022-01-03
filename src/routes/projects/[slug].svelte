@@ -24,6 +24,10 @@
 
 {project.title}
 {project.date}
+{project.fields}
+{project.content}
+{project.body}
+{project.fonts}
 
 {#each project.medias as media}
   <img src="/projects/{project.slug}/medias/{media}" alt=""/>
