@@ -37,7 +37,6 @@
       background-color:var(--color-3); 
     }
 
-
     a{
       text-decoration: none;
       color: var(--color-2);
