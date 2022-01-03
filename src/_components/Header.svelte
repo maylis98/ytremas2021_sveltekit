@@ -114,9 +114,4 @@
       display:flex;
     }
 
-    small { 
-      font-family:'Roboto', sans-serif;
-      font-size: var(--typo-p); 
-    }
-
     </style>

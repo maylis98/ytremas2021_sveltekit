@@ -19,6 +19,7 @@
   import next from '../_components/medias/arrow-next.svg';
   import { svg_element } from 'svelte/internal';
   import ImageBoxIndex from '../_components/ImageBoxIndex.svelte';
+  import Footer from '../_components/Footer.svelte';
 
 </script>
 
@@ -50,6 +51,8 @@
   </div>
 </main>
 
+<Footer/>
+
 <style>
 
 .carousel{
@@ -59,6 +62,7 @@
   scroll-behavior: smooth;
   height: 100vh;
   position: relative;
+  z-index: 1;
 }
 
 .carousel::-webkit-scrollbar {
@@ -77,6 +81,7 @@
   margin-bottom:auto;
   padding: var(--ui-layout-container-padding);
   padding: var(--ui-layout-container-padding);
+  /* z-index: 2; */
 }
 
 .layout-button {

@@ -1,9 +1,4 @@
-@font-face {
-	font-family: sneakers-pro;
-	font-weight: 500;
-	font-style: normal;
-	src: url(https://use.typekit.net/llf4aez.css) format("truetype");
-}
+@import url("https://use.typekit.net/llf4aez.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -37,11 +32,11 @@
      | 1.2 TYPOGRAPHY
      ------------------------------------------------------------*/
    
-     /* --typography-labeur: sneakers-pro,sans-serif; */
+     /* --typo-labeur: sneakers-pro,sans-serif; */
    
      /* FONT SIZE */
    
-     --typo-h1: 1.9375rem;
+     --typo-h1: 2.3rem;
      --typo-h2: 3rem;
      --typo-p : 1.5rem;
      --typo-p4: 2rem;
@@ -50,7 +45,7 @@
    
      /* LEADING */
    
-     --typo-h1-leading: 1.2;
+     --typo-h1-leading: 1;
      --typo-h2-leading: 1.2;
      --typo-h4-leading: 1.25;
      --typo-p-leading : 1.5;
@@ -116,4 +111,9 @@
   text-align: center;
   color: var(--color-typo-button);
   background-color:var(--color-n-100);
+}
+
+small { 
+  font-family:'Roboto', sans-serif;
+  font-size: var(--typo-p); 
 }
