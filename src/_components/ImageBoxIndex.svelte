@@ -1,5 +1,5 @@
 <script>
-export let title, slug;
+  export let title, slug;
 </script>
 
 <div class="carousel-item">

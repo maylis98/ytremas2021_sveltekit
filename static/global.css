@@ -86,7 +86,7 @@
   margin: 0;
   padding: 0;}
 
-  main {
+main {
   background-color: var(--color-2);
   font-feature-settings: "liga", "kern";
   margin: 0 auto;
@@ -110,7 +110,25 @@
   line-height: 1;
   text-align: center;
   color: var(--color-typo-button);
-  background-color:var(--color-n-100);
+  background-color:var(--color-2);
+}
+
+.component-button:hover{
+  -webkit-box-shadow:inset 0px 0px 0px 3px var(--color-2);
+  -moz-box-shadow:inset 0px 0px 0px 3px var(--color-2);
+  box-shadow:inset 0px 0px 0px 3px var(--color-2);
+  color: var(--color-2);
+  background-color:var(--color-3);
+}
+
+.component-button > a {
+  text-decoration: none;
+  color: var(--color-3);
+}
+
+.component-button > a:hover {
+  text-decoration: none;
+  color: var(--color-2);
 }
 
 small { 

@@ -22,8 +22,9 @@
               <p class="p4"><strong>Say Hello:</strong>
               </p>
             </div>
-            <div class="component-button"><p class="p4">y.tremas@gmail.com</p></div>
-            <div class="component-button"><p class="p4">@y_tremas</p></div>
+            <div class="component-button"><a  onClick="javascript:window.open('mailto:'y.tremas@gmail.com', 'my-window');event.preventDefault()"
+              href="mailto:y.tremas@gmail.com"><p class="p4">y.tremas@gmail.com</p></a></div>
+            <div class="component-button"><a href="https://www.instagram.com/y_tremas/?hl=fr" target="_blank"><p class="p4">@y_tremas</p></a></div>
           </div>
         </a>
   </div>
@@ -31,78 +32,78 @@
 
 <style>
 
-    header {
-      padding-bottom: 0.5rem;
-      padding-top: 0.5rem;
-      background-color:var(--color-3); 
-    }
-
-    a{
-      text-decoration: none;
-      color: var(--color-2);
-    }
-    
-    .ui-layout-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: var(--ui-layout-container);
-        padding-right: var(--ui-layout-container);
-    }
-    
-    .ui-drop-menu{
-      display:none;
-      position: absolute;
+  header {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    background-color:var(--color-3); 
+  }
+  
+  .ui-layout-container {
+      display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 100%;
-      left: 0;
-      padding: 3rem;
-      z-index : 22;
-      background-color:var(--color-3);
-      transform-origin: top center;
-      animation:rotateX 300ms ease-in-out forwards;
-    }
+      padding-left: var(--ui-layout-container);
+      padding-right: var(--ui-layout-container);
+  }
 
-    strong{
-      text-transform: uppercase;
-      font-weight: 100;
-    }
+  .ui-layout-container > a{
+    text-decoration: none;
+    color: var(--color-2);
+  }
+  
+  .ui-drop-menu{
+    display:none;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    left: 0;
+    padding: 3rem;
+    z-index : 22;
+    background-color:var(--color-3);
+    transform-origin: top center;
+    animation:rotateX 300ms ease-in-out forwards;
+  }
 
-    p{
-      font-family: 'Roboto', sans-serif;
-    }
+  strong{
+    text-transform: uppercase;
+    font-weight: 100;
+  }
 
-    .p3{
-      font-size: var(--typo-p);
-      line-height: var(--typo-p-leading);
-    }
+  p{
+    font-family: 'Roboto', sans-serif;
+  }
 
-    .p4{
-      font-size: var(--typo-p4);
+  .p3{
+    font-size: var(--typo-p);
+    line-height: var(--typo-p-leading);
+  }
+
+  .p4{
+    font-size: var(--typo-p4);
+  }
+  
+  
+  @keyframes rotateX {
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
     }
-    
-    
-    @keyframes rotateX {
-      0% {
-        opacity: 0;
-        transform: rotateX(-90deg);
-      }
-      50% {
-        transform: rotateX(-20deg);
-      }
-      100% {
-        opacity: 1;
-        transform: rotateX(0deg);
-      }
+    50% {
+      transform: rotateX(-20deg);
     }
-    
-    #about:hover > .ui-drop-menu {
-      display:flex;
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
     }
-    
-    #contact:hover > .ui-drop-menu {
-      display:flex;
-    }
+  }
+  
+  #about:hover > .ui-drop-menu {
+    display:flex;
+  }
+  
+  #contact:hover > .ui-drop-menu {
+    display:flex;
+  }
 
     </style>

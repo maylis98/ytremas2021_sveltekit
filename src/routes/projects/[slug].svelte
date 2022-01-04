@@ -20,72 +20,132 @@
 
 <script>
   export let project;
+  // import ImageBoxProjects from 'src/_components/projects_components/ImageBoxProjects.svelte';
 </script>
 
-<!-- <div class="logo-s">
-  <img src="{logo}" alt="">
+<svelte:head>
+  <link rel="icon" href="/favicon.png" />
+  <link rel="stylesheet" href="/global.css">
+  <title>Y_TREMAS | {project.title}</title>
+</svelte:head>
+
+<main>
+  <!-- <div class="logo-s">
+    <img src="{logo}" alt="">
+  </div> -->
+  <div class="project-carousel">
+      {#each project.medias as media}
+      <div class="project-carousel-item">
+        <img src="/projects/{project.slug}/medias/{media}" alt=""/>
+      </div>
+      {/each}
+  </div>
+
+  <div class="details">
+    <div class="on-left">
+      <h1>{project.title}</h1>
+      <p class="p-grey big">{project.date}</p>
+      <!-- <p class="p-grey">CATEGORY</p> -->
+      <p class="caps">{project.fields}</p>
+      <br>
+      <p>{project.body}</p>
+    </div>
+    <div class="on-right">
+      <p class="p-grey">CONTENT</p>
+      <p>{project.content}</p>
+      <p class="p-grey">SPEC</p>
+      <p>{project.fonts}</p>
+      <p>{project.format}</p>
+      <p>{project.media}</p>
+    </div>
+  </div>
+</main>
+
+
+<!-- A FAIRE -->
+
+<!-- <div class="project-carousel">
+  {#each project.medias as media}
+    <ImageBoxProjects
+          slug={project.slug}
+          media={media}/>
+  {/each}
 </div> -->
 
-<div class="details">
-  <div class="on-left">
-    <h1>{project.title}</h1>
-    <p class="p-grey big">{project.date}</p>
-    <!-- <p class="p-grey">CATEGORY</p> -->
-    <p class="caps">{project.fields}</p>
-    <p>{project.body}</p>
-  </div>
-  <div class="on-right">
-    <p class="p-grey">CONTENT</p>
-    <p>{project.content}</p>
-    <p class="p-grey">SPEC</p>
-    <p>{project.fonts}</p>
-    <p>{project.format}</p>
-    <p>{project.media}</p>
-  </div>
-</div>
-
-{#each project.medias as media}
-  <img src="/projects/{project.slug}/medias/{media}" alt=""/>
-{/each}
 
 <style>
 
-  .details{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
+.project-carousel{
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  height: 87.7vh;
+  position: relative;
+  z-index: 1;
+}
 
-  h1{
+.project-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.project-carousel-item{
+    height : 100%;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc(100%/3) ;
+}
+
+.project-carousel-item > img{
+  position: absolute;
+  display: block;
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  border-radius: 6rem;
+}
+
+.details{
+  position: relative;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+h1{
   font-family: sneakers-pro, sans-serif;
   font-size: var(--typo-p4); 
   color: var(--color-3);
   letter-spacing: 0.05em;
   line-height: var(--typo-h1-leading);
   text-align: left;
-  }
+}
 
-  p{
+p{
   font-family: 'Roboto', sans-serif;
   font-size: var(--typo-p); 
   letter-spacing: 0.05em;
   line-height: var(--typo-p-leading);
   text-align: left;
-  }
+}
 
-  .p-grey{
-    color: var(--color-n-500);
-  }
+.p-grey{
+  color: var(--color-n-500);
+}
 
-  .big{
-    font-size: var(--typo-p4);
-  }
+.big{
+  font-size: var(--typo-p4);
+}
 
-  .caps{
-    text-transform: uppercase;
-  }
+.caps{
+  text-transform: uppercase;
+}
 
+main{
+  background-color: var(--color-1);
+}
 
 </style>
