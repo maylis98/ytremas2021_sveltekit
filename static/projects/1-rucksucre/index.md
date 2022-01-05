@@ -6,6 +6,8 @@ fields:
   - Virtual production
   - CGI
   - Storytelling
+package:
+  - For the Swiss music band 'Tout Bleu'
 content:
   - Pointclouds landscape
   - Photogrammetry
@@ -15,11 +17,11 @@ link:
 
 # spec:
 fonts:
-- X
+- Helvetica
 format:
-  - 16:9"
+  - 16 | 9
 media:
-  - X
+  - Available on Youtube
 ---
 
 Bidule is a video clip based on the music band ToutBleu. It highlights the fluid yet rigourous style of the band

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Header from '../_components/Header.svelte';
   import Footer from '../_components/Footer.svelte';
+  import PageTransition from '../_components/PageTransition.svelte';
 </script>
 
 <svelte:head>
@@ -9,7 +10,7 @@
 </svelte:head>
 
 <Header/>
-<slot></slot>
+<PageTransition><slot></slot></PageTransition>
 <Footer/>
 
 

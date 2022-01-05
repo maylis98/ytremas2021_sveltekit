@@ -1,23 +1,28 @@
 ---
 title: SUB.
 date: 2020
-type: VR experience
+type: Book
 fields:
-  - VR
-  - Storytelling
+  - Editorial design
+  - Programming
 package:
-  - Puzzle game
+  - Shown at the international Biennial of graphic design 2021 (chaumont) student competition
 content:
-  - 3D models
-  - Interactive UI
+  - Generative content (basil.js)
+  - Data from submarinecablemap.com by TeleGeography
 link:
   - youtubelink.youtube
+
+# spec:
 fonts:
-- Signal by Production Type
+  - Imbue Thin
+  - Surt by blaze type 
 format:
-  - 16:9
-  - Available on Oculus Quest 1
+  - 13,5 x 22,5 x 2,7 cm 
 media:
-  - X
+  - Clairefontaine Orange Trophee 160 gm
+  - Avery Glossy 100 gm 
+
 ---
-HighWay compare how the height of your cities condition our feeling of power.
+
+This installation is !!!

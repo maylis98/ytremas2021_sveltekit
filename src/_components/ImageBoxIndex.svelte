@@ -17,7 +17,7 @@
     position: relative;
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: calc(100%/3) ;
+    flex-basis: calc(100%/2.3) ;
 }
 
 .carousel-item > img{
@@ -26,7 +26,7 @@
   object-fit: cover;
   width:100%;
   height:100%;
-  border-radius: 6rem;
+  border-radius: var(--ui-radius-img);
 }
 
 .title-box{
@@ -43,6 +43,12 @@
   letter-spacing: 0.05em;
   line-height: var(--typo-h1-leading);
   text-align: center;
+  cursor: crosshair;
+}
+
+.title-box:hover{
+  color: var(--color-2);
+  -webkit-text-stroke: 2px black;
 }
 
 

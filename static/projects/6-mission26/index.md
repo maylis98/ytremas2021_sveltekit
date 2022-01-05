@@ -1,24 +1,28 @@
 ---
 title: MISSION 26
 date: 2020
-type: VR experience
+type: Educational fiction
 fields:
-  - VR
+  - CGI
   - Storytelling
 package:
-  - Puzzle game
+  - For The distortion festival AS ABOVE, so below
 content:
-  - 3D models
-  - Interactive UI
+  - 3D illustrations
+  - Posters
+  - Gifs & Looping animations
 link:
   - youtubelink.youtube
 
+# spec:
 fonts:
-- Signal by Production Type
+  - Neue Montreal
 format:
-  - 16:9
-  - Available on Oculus Quest 1
+  - 16 | 9
+  - 21 x 29,7 cm
 media:
-  - X
+  - Avery Photo 200 gm
+  - 4 LCD screens
 ---
-HighWay compare how the height of your cities condition our feeling of power.
+
+This installation is !!!

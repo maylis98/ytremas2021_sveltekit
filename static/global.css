@@ -10,23 +10,24 @@
    
        /* COLOR PALETTE */
    
-       --color-n-000: #DBFF00;
-       --color-n-100: #ffffff;
-       --color-n-300: #000000;
-       --color-n-500: #5F5F5F;
+      --color-n-000: #DBFF00;
+      --color-n-100: #ffffff;
+      --color-n-300: #000000;
+      --color-n-500: #5F5F5F;
    
         /* COLOR HIERARCHY */
       
-        --color-1: var(--color-n-000);
-        --color-2: var(--color-n-100);
-        --color-3: var(--color-n-300);
+      --color-1: var(--color-n-000);
+      --color-2: var(--color-n-100);
+      --color-3: var(--color-n-300);
+      --color-4: var(--color-n-500);
     
         /* typo COLOR */
     
-        --color-typo-heading: var(--color-n-500);
-        --color-typo-body: var(--color-n-100);
-        --color-typo-note: var(--color-n-100);
-        --color-typo-button: var(--color-n-300);
+      --color-typo-heading: var(--color-n-500);
+      --color-typo-body: var(--color-n-100);
+      --color-typo-note: var(--color-n-100);
+      --color-typo-button: var(--color-n-300);
    
     /*------------------------------------------------------------
      | 1.2 TYPOGRAPHY
@@ -36,24 +37,26 @@
    
      /* FONT SIZE */
    
-     --typo-h1: 2.3rem;
-     --typo-h2: 3rem;
-     --typo-p : 1.1rem;
-     --typo-p4: 2rem;
-     --typo-s : .8125rem;
-     --typo-min : 1rem;
+    --typo-h1: 2.3rem;
+    --typo-h2: 3rem;
+    --typo-p : 1.2rem;
+    --typo-p4: 2rem;
+    --typo-s : .8125rem;
+    --typo-min : 1rem;
    
      /* LEADING */
    
-     --typo-h1-leading: 1;
-     --typo-h2-leading: 1.2;
-     --typo-h4-leading: 1.25;
-     --typo-p-leading : 1.5;
+    --typo-h1-leading: 2;
+    --typo-h2-leading: 1.2;
+    --typo-h4-leading: 1.25;
+    --typo-p-leading : 1.5;
+
+    --letter-spacing-p: 0.05em;
    
      /* MARGIN */
    
-     --typo-margin-heading: .75rem;
-     --typo-margin-body   : 1.125rem;
+    --typo-margin-heading: .75rem;
+    --typo-margin-body   : 1.125rem;
    
      /*------------------------------------------------------------
      | 1.2 LAYOUT
@@ -61,15 +64,16 @@
    
      /* CONTAINER */
      
-     --ui-layout-container: 1.25rem;
-     --ui-layout-container-padding: 1rem;
-     --ui-layout-grid: 3.625rem;
-     --ui-layout-gutter: 1rem;
+    --ui-layout-container: 1.25rem;
+    --ui-layout-container-padding: 1rem;
+    --ui-layout-grid: 3.625rem;
+    --ui-layout-gutter: 1rem;
    
      /* BORDER RADIUS */
      
-     --ui-radius-button: 5rem;
-     --ui-radius-card  : .5rem;
+    --ui-radius-button: 5rem;
+    --ui-radius-card  : .5rem;
+    --ui-radius-img: 3.3rem;
      
    }
 
@@ -77,7 +81,9 @@
   | 2.0 FOUNDATION
   --------------------------------------------------------------*/
 
-  html { box-sizing: border-box; }
+  html { 
+    box-sizing: border-box; 
+    cursor: crosshair;}
 
   *,
 *:before,
@@ -87,13 +93,39 @@
   padding: 0;}
 
 main {
-  background-color: var(--color-2);
+  background-color: var(--color-1);
   font-feature-settings: "liga", "kern";
   margin: 0 auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  
 }
 
+/*--------------------------------------------------------------
+| 5.1 TEXT STYLING
+--------------------------------------------------------------*/
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
+.p2{
+  font-size: var(--typo-s);
+  line-height: var(--typo-p-leading);
+  color: var(--color-4);
+  letter-spacing: var(--letter-spacing-p);
+}
+
+em{
+  color: var(--color-4);
+}
+
+a{
+  text-decoration: none;
+ }
+
+/*--------------------------------------------------------------
+| 5.2 MENU ANIMATION
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 | 6.2 BUTTON
@@ -144,4 +176,29 @@ small {
 .on-right{
   text-align: end;
   text-transform: uppercase;
+}
+
+/*------------------------------------------------------------
+  | 7.1 SCROLLBAR
+  ------------------------------------------------------------*/	
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--color-3);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-1); 
+  border-radius: var(--ui-radius-button);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-4); 
 }

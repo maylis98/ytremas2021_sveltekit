@@ -19,6 +19,7 @@
   import next from '../_components/medias/arrow-next.svg';
   import { svg_element } from 'svelte/internal';
   import ImageBoxIndex from '../_components/ImageBoxIndex.svelte';
+  import Logo from '../_components/Logo.svelte';
 
 </script>
 
@@ -29,6 +30,7 @@
 </svelte:head>
 
 <main>
+  <div class="logo-home"><Logo/></div>
   <!-- div logo-box
     (don't forget to import it) -->
   <div class="layout-controls">
@@ -51,6 +53,12 @@
 
 <style>
 
+.logo-home{
+  position: fixed;
+  top:10%;
+  left: 1%;
+  z-index: 2;
+}
 
 .carousel{
   display: flex;
@@ -73,7 +81,7 @@
   justify-content: space-between;
   align-items: center;
   width:100%;
-  height: 92%;
+  height: 90%;
   margin-top: auto;
   margin-bottom:auto;
   padding-right: var(--ui-layout-container-padding);

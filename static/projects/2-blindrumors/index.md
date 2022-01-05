@@ -1,20 +1,17 @@
 ---
 title: BLIND RUMORS
 date: 2021
-type: Installation
+type: Interactive installation 
 fields:
-  - Numerik Games Festival 2021
-  - VR
+  - Experience design with VR
   - Visual Identity
   - Space design
 package:
-  - VR game
-  - Floor scenography
-  - Communication set
+  - Numerik Games Festival 2021
 content:
-  - VR headset
+  - VR game
   - Virtual spatial sounds & light
-  - Stickers
+  - Floor scenography (stickers)
   - Video clip
   - Flyers
   - Voice-Over
