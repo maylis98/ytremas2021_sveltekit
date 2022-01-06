@@ -27,6 +27,7 @@ footer {
 
 .ui-layout-container {
     display: flex;
+    position:relative;
     flex-direction: row;
     justify-content: space-between;
     padding-left: var(--ui-layout-container);
@@ -34,19 +35,20 @@ footer {
 }
 
 .ui-drop-menu{
-display:none;
-position: absolute;
-bottom: 3.2%;
-flex-direction: row-reverse;
-justify-content: space-between;
-width: 100%;
-left: 0;
-padding: 2rem;
-border-radius: var(--ui-radius-img) var(--ui-radius-img) 0 0;
-z-index : 22;
-background-color:var(--color-3);
-transform-origin: bottom center;
-animation:rotateX 300ms ease-in-out forwards;
+  display:none;
+  position: absolute;
+  bottom:127%;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  left: 0;
+  padding: 2rem;
+  border-radius: var(--ui-radius-img) var(--ui-radius-img) 0 0;
+  z-index : 22;
+  background-color:var(--color-3);
+  transform-origin: bottom center;
+  animation:rotateX 300ms ease-in-out forwards;
+  text-align: end;
 }
 
 .ui-layout-container a > p:hover{
@@ -54,7 +56,7 @@ animation:rotateX 300ms ease-in-out forwards;
 }
 
 #drop-menu:hover > .ui-drop-menu {
-  display:flex;
+  display:block;
 }
 
 @keyframes rotateX {
