@@ -14,12 +14,37 @@
 
 <script lang="ts">
   export let projects_list;
-	// import logo from '../_components/medias/logo-s.svg';
   import previous from '../_components/medias/arrow-previous.svg';
   import next from '../_components/medias/arrow-next.svg';
-  import { svg_element } from 'svelte/internal';
   import ImageBoxIndex from '../_components/ImageBoxIndex.svelte';
   import Logo from '../_components/Logo.svelte';
+  // import { onMount } from 'svelte';
+
+  // onMount(() => {
+  //   const scrollContainer = document.querySelector(".carousel");
+
+  //   scrollContainer.addEventListener("wheel", (evt) => {
+  //       evt.preventDefault();
+  //       scrollContainer.scrollLeft += 5 * evt.deltaY;
+  //   });
+  // });
+
+  // function scrollLeft() {
+	// 	document.getElementByClass('.carousel').scrollLeft += 20;
+	// }
+
+  let carousel
+
+  function horizontalScroll (e) {
+    e.preventDefault();
+    carousel.scrollLeft += e.deltaY;
+  };
+
+  function scrollLeft (e) {
+    carousel.scrollTo(0,carousel.innerWidth);
+    // carousel.scrollLeft += -20;
+  };
+
 
 </script>
 
@@ -31,18 +56,17 @@
 
 <main>
   <div class="logo-home"><Logo/></div>
-  <!-- div logo-box
-    (don't forget to import it) -->
-  <div class="layout-controls">
-    <div class="layout-button">
+
+    <div on:mouseenter={scrollLeft} class="arrow-left">
       <img src="{previous}" alt="">
     </div>
-    <div class="layout-button">
+
+    <div class="arrow-right">
       <img src="{next}" alt="">
     </div>
-  </div>
 
-    <div class="carousel">
+
+    <div on:wheel={horizontalScroll} bind:this={carousel} class="carousel">
       {#each projects_list as project}
         <ImageBoxIndex
         title={project.title}
@@ -63,6 +87,7 @@
 .carousel{
   display: flex;
   scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   scroll-behavior: smooth;
   height: 87.7vh;
@@ -74,23 +99,18 @@
   display: none;
 }
 
-.layout-controls {
-  position:absolute;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width:100%;
-  height: 90%;
-  margin-top: auto;
-  margin-bottom:auto;
-  padding-right: var(--ui-layout-container-padding);
-  padding-left: var(--ui-layout-container-padding);
-  /* z-index: 2; */
+.arrow-left{
+  position: fixed;
+  left:1%;
+  top:47%;
+  z-index:10;
 }
 
-.layout-button {
-  display: inline;
+.arrow-right{
+  position: fixed;
+  right:1%;
+  top:47%;
+  z-index:10;
 }
 
 </style>

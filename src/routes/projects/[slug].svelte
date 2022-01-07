@@ -22,6 +22,16 @@
   export let project;
   // import ImageBoxProjects from 'src/_components/projects_components/ImageBoxProjects.svelte';
   import Logo from "../../_components/Logo.svelte";
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    const scrollContainer = document.querySelector(".project-carousel");
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+    });
+  });
 </script>
 
 <svelte:head>
@@ -31,11 +41,7 @@
 </svelte:head>
 
 <main>
-  <!-- <div class="logo-s">
-    <img src="{logo}" alt="">
-  </div> -->
-
-  <div class="logo-project"><Logo/></div>
+  <a href="/"><div class="logo-project"><Logo/></div></a>
 
   <div class="project-carousel">
       {#each project.medias as media}
@@ -89,7 +95,7 @@
 }
 
 .logo-project > svg{
-width: 20%;
+  width: 20%;
   height: 20%;
 }
 

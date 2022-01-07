@@ -170,35 +170,38 @@ small {
 
 .on-left{
   width: 70%;
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 
 .on-right{
   text-align: end;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 /*------------------------------------------------------------
   | 7.1 SCROLLBAR
   ------------------------------------------------------------*/	
 
-/* width */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+/* Largeur
 ::-webkit-scrollbar {
   width: 7px;
 }
 
-/* Track */
+Fond
 ::-webkit-scrollbar-track {
   background-color: var(--color-3);
 }
  
-/* Handle */
+Poignée scroll
 ::-webkit-scrollbar-thumb {
   background: var(--color-1); 
   border-radius: var(--ui-radius-button);
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-4); 
-}
+} */

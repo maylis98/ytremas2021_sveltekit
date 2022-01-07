@@ -18,27 +18,43 @@
               <p class="p3 on-left">
                 She is currently based in Geneva where she plays with virtual and analog tools to find new ways of doing storytelling. 
               </p>
-            </div>
-            <div>
-              <p class="p3 on-right">
-                Artistic direction <br> interaction & graphic design <br> applied to <br> video, electronics, creative coding, industrial design, video games, art installation
-              </p>
 
               <br>
-              <p class="p2 on-right">Graduated from</p>
-
+              <p class="p2 on-left">Graduated from</p>
               <br>
-              <p class="p3 on-right">
+              <p class="p3 on-left">
                 <strong>HEAD</strong> <em>Geneva, CH</em>
               </p>
-              <p class="p3 on-right">Master of Art in Design <em>→</em> Media Design</p>
+              <p class="p3 on-left">Master of Art in Design <em>→</em> Media Design</p>
 
               <br>
-              <p class="p3 on-right">
+              <p class="p3 on-left">
                 <strong>HEAR</strong> <em>Strasbourg, FR</em>
               </p>
-              <p class="p3 on-right">Bachelor in Visual Communication <em>→</em> Graphic Design</p>
+              <p class="p3 on-left">Bachelor in Visual Communication <em>→</em> Graphic Design</p>
+            </div>
 
+            <div>
+              <p class="p2 on-right">STRATEGY</p> 
+              <p class="p3 on-right">
+                Creative concept <br>
+                Artistic direction <br>
+                User Experience Research <br>
+                Customer journey <br>
+                Brand storytelling <br>
+              </p>
+
+              <br>
+
+              <p class="p2 on-right">DESIGN & PROTOTYPING</p>
+              <p class="p3 on-right">
+                Video & Virtual production <br>
+                Video games & interactive environment <br>
+                Web UX/UI design <br> 
+                VR, AR, XR <br>
+                Media installation <br>
+                Graphic design & Motion<br>
+              </p>
             </div>
           </div>
         </a>

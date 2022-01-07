@@ -41,7 +41,7 @@
   font-size: var(--typo-h1); 
   color: var(--color-1);
   letter-spacing: 0.05em;
-  line-height: var(--typo-h1-leading);
+  line-height: var(--typo-h2-leading);
   text-align: center;
   cursor: crosshair;
 }
