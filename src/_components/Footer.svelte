@@ -1,7 +1,7 @@
 <footer>
     <div class="ui-layout-container">
         <p class="p2">©ALL RIGHTS RESERVED</p>
-        <a href="#" role="link" aria-label="#" id="drop-menu">
+        <a href={'#'} role="link" aria-label="#" id="drop-menu">
           <p class="p2">LAST UPDATE 05/01/2022</p>
           <div class="ui-drop-menu">
             <div>

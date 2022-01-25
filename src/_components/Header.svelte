@@ -1,6 +1,6 @@
 <header>
   <div class="ui-layout-container">
-        <a href="#" role="link" aria-label="#" id="drop-menu"><small>ABOUT</small>
+        <a href={'#'} role="link" aria-label="#" id="drop-menu"><small>ABOUT</small>
           <div class="ui-drop-menu">
             <div>
               <p class="p3 on-left">
@@ -59,7 +59,7 @@
           </div>
         </a>
 
-        <a href="#" role="link" aria-label="#" id="drop-menu"><small>EXPERIENCE</small>
+        <a href={'#'} role="link" aria-label="#" id="drop-menu"><small>EXPERIENCE</small>
           <div class="ui-drop-menu">
             <div>
               <p class="p2 on-left">EXHIBITIONS</p>
@@ -147,7 +147,7 @@
           </div>
         </a>
 
-        <a href="#" role="link" aria-label="#" id="drop-menu"><small>CONTACT</small>
+        <a href={'#'} role="link" aria-label="#" id="drop-menu"><small>CONTACT</small>
           <div class="ui-drop-menu">
             <div>
               <p class="p4"><strong>Say Hello:</strong>

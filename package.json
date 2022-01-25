@@ -2,8 +2,9 @@
   "name": "my-app",
   "version": "0.0.1",
   "scripts": {
+    "proto.static": "http-server build/",
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
+    "build": "svelte-kit build -h",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
@@ -30,6 +31,7 @@
   },
   "type": "module",
   "dependencies": {
-    "front-matter": "^4.0.2"
+    "front-matter": "^4.0.2",
+    "http-server": "^14.1.0"
   }
 }
