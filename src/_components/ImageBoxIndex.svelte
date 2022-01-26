@@ -12,10 +12,12 @@
 <style>
 
 .carousel-item{
+  display: block;
     height : 100%;
+    width:auto;
     /* width: calc(100%/3); */
     position: relative;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     flex-shrink: 0;
     flex-basis: calc(100%/2.3) ;
 }

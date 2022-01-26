@@ -1,7 +1,7 @@
 import commonjs from '@rollup/plugin-commonjs';
-// import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-auto';
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-static';
+// import adapter from '@sveltejs/adapter-static';
 
 
 /** @type {import('@sveltejs/kit').Config} */

@@ -1,9 +1,9 @@
 <script context="module">
   export async function load({
-    page,
+    params,
     fetch
   }) {
-    const slug = page.params.slug;
+    const slug = params.slug;
     let res = await fetch(`/projects/${slug}.json`);
     if (res.status == 404) return {
       status: 404,
@@ -14,13 +14,13 @@
       props: {
         project
       }
-    }
+    };
   }
 </script>
 
 <script>
   export let project;
-  // import ImageBoxProjects from 'src/_components/projects_components/ImageBoxProjects.svelte';
+  // import ImageBoxProjects from '../../_components/projects_components/ImageBoxProjects.svelte';
   import Logo from "../../_components/Logo.svelte";
   import { onMount } from 'svelte';
 
@@ -44,6 +44,7 @@
   <a href="/"><div class="logo-project"><Logo/></div></a>
 
   <div class="project-carousel">
+      <iframe src="{project.media}?rel=0&autoplay=1&controls=0&disablekb=1&loop=1&modestbranding=1&playsinline=1&color=white&mute=1" title="player" frameborder="0"></iframe>
       {#each project.medias as media}
       <div class="project-carousel-item">
         <img src="/projects/{project.slug}/medias/{media}" alt=""/>
@@ -69,12 +70,14 @@
       <p>{project.fonts}</p>
       <p>{project.format}</p>
       <p>{project.media}</p>
+      
+<!-- // boucle
+      <iframe width="560" height="315" src="{project.media}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
     </div>
   </div>
 </main>
 
-
-<!-- A FAIRE -->
 
 <!-- <div class="project-carousel">
   {#each project.medias as media}
@@ -83,7 +86,6 @@
           media={media}/>
   {/each}
 </div> -->
-
 
 <style>
 
@@ -101,6 +103,7 @@
 
 .project-carousel{
   display: flex;
+  flex-direction: row;
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
   scroll-behavior: smooth;
@@ -108,6 +111,15 @@
   position: relative;
   z-index: 1;
 }
+
+.project-carousel > iframe{
+    height : 100%;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc(100%/2);
+}
+
 
 .project-carousel::-webkit-scrollbar {
   display: none;
@@ -122,13 +134,13 @@
 }
 
 .project-carousel-item > img{
-  position: absolute;
-  display: block;
+  /* position: absolute; */
   /* object-fit: cover;
   width:100%; */
   height:100%;
   border-radius: var(--ui-radius-img);
 }
+
 
 .details{
   position: relative;

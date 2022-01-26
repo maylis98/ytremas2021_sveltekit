@@ -1,11 +1,12 @@
-<svg width="60%" height="60%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.74 315.49">
+<svg id='logo' width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.74 315.49">
 <defs>
     <style>
-        #logo-s{
+        
+        #logo{
             fill:#ccf000;
         }
 
-        #logo-s:hover{
+        #logo:hover{
             fill:black;
             /* stroke:#ccf000;
             stroke-width:2px; */
