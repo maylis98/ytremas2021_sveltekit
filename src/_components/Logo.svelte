@@ -1,7 +1,6 @@
 <svg id='logo' width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335.74 315.49">
 <defs>
     <style>
-        
         #logo{
             fill:#ccf000;
         }

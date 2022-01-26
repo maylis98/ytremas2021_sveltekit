@@ -17,10 +17,13 @@
   import { tweened } from 'svelte/motion';
   import { cubicOut } from 'svelte/easing';
 
-  import previous from '../_components/medias/arrow-previous.svg';
-  import next from '../_components/medias/arrow-next.svg';
+
   import ImageBoxIndex from '../_components/ImageBoxIndex.svelte';
+  import Carousel from '../_components/Carousel.svelte';
   import Logo from '../_components/Logo.svelte';
+  import ArrowNext from '../_components/medias/ArrowNext.svelte';
+  import ArrowPrev from '../_components/medias/ArrowPrev.svelte';
+
   // import { onMount } from 'svelte';
 
   // onMount(() => {
@@ -43,7 +46,7 @@
 	});
 
   let carousel_el, wrap_el;
-	let update = undefined, 
+	let update = undefined,
     direction = 0;
 
   function pointerIn(new_direction){
@@ -88,36 +91,29 @@
 </svelte:head>
 
 <main bind:this={carousel_el}>
-  <div class="logo-home"><Logo class="logo-index"/></div>
+  <div class="logo-home"><Logo/></div>
 
-    <div on:pointerover={()=>{pointerIn(-1);}} on:pointerleave={pointerOut} class="arrow-left">
-      <img src="{previous}" alt="">
+    <!-- <div on:pointerover={()=>{pointerIn(-1);}} on:pointerleave={pointerOut} class="arrow-left">
+      <ArrowPrev/>
     </div>
 
     <div on:pointerover={()=>{pointerIn(1);}} on:pointerleave={pointerOut} class="arrow-right">
-      <img src="{next}" alt="">
-    </div>
+      <ArrowNext/>
+    </div> -->
+
+    <Carousel>
+    {#each projects_list as project}
+      <ImageBoxIndex
+      title={project.title}
+      slug={project.slug}/>
+    {/each}
+
+    </Carousel>
 
 
-    <div on:wheel={horizontalScroll} bind:this={wrap_el} class="carousel" style="transform:translateX(-{$progress}px)">
-      {#each projects_list as project}
-        <ImageBoxIndex
-        title={project.title}
-        slug={project.slug}/>
-      {/each}
-    </div>
 </main>
 
 <style>
-
-main{
-		position:relative;
-		height:auto;
-		width: 100%;
-		height: 80%;
-		overflow:clip;
-	}
-
 .logo-home{
   position: fixed;
   top:10%;
@@ -125,7 +121,7 @@ main{
   z-index: 2;
 }
 
-.carousel{
+/* .carousel{
   display: flex;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -135,25 +131,6 @@ main{
   position: relative;
   z-index: 1;
   transition: transform 0.1s;
-}
-
-
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.arrow-left{
-  position: fixed;
-  left:1%;
-  top:47%;
-  z-index:10;
-}
-
-.arrow-right{
-  position: fixed;
-  right:1%;
-  top:47%;
-  z-index:10;
-}
+} */
 
 </style>
