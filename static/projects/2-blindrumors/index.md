@@ -26,8 +26,8 @@ format:
   - Available on Oculus Quest 1
   - 42 x 59,5 cm (poster)
   - 21 x 14,8 cm (flyer)
-media:
   - Munken Pure 250gm
+yt_video:
 
 ---
 Blind Rumors aims at understand how multiple comments create a fact by sprading the information.

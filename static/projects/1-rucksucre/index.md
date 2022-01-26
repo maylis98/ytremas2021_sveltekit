@@ -20,7 +20,7 @@ fonts:
   - Helvetica
 format:
   - 16 | 9
-media: https://www.youtube.com/embed/qIFWs75FWx4
+yt_video: https://www.youtube.com/embed/qIFWs75FWx4
 ---
 
 Bidule is a video clip based on the music band ToutBleu. It highlights the fluid yet rigourous style of the band

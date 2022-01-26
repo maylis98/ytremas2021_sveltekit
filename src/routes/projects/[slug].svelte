@@ -44,7 +44,9 @@
   <a href="/"><div class="logo-project"><Logo/></div></a>
 
   <div class="project-carousel">
-      <iframe src="{project.media}?rel=0&autoplay=1&controls=0&disablekb=1&loop=1&modestbranding=1&playsinline=1&color=white&mute=1" title="player" frameborder="0"></iframe>
+      {#if project.yt_video}
+        <iframe src="{project.yt_video}?rel=0&autoplay=1&controls=0&disablekb=1&loop=1&modestbranding=1&playsinline=1&color=white&mute=1" title="player" frameborder="0"></iframe>
+      {/if}
       {#each project.medias as media}
       <div class="project-carousel-item">
         <img src="/projects/{project.slug}/medias/{media}" alt=""/>
@@ -119,7 +121,15 @@
     flex-shrink: 0;
     flex-basis: calc(100%/2);
 }
-
+/* 
+.iframe{
+  position:absolute;
+  border-radius: var(--ui-radius-img);
+  -webkit-border-radius: var(--ui-radius-img);
+  -o-border-radius: var(--ui-radius-img);
+  height: 100%;
+  overflow: hidden;
+} */
 
 .project-carousel::-webkit-scrollbar {
   display: none;
