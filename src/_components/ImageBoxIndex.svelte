@@ -20,6 +20,7 @@
   color: var(--color-2);
   -webkit-text-stroke: 2px black;
 }
+
 img{
   display:block;
   width:auto;

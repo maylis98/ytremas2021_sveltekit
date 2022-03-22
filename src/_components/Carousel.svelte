@@ -11,7 +11,7 @@
 	let carousel_el, wrap_el;
 	let update = undefined,
 			direction = 0;
-            
+
 	function pointerIn(new_direction){
 		if(update != undefined) return;
 		direction = new_direction;
@@ -82,11 +82,13 @@
 		display:flex;
 		justify-content: space-between;
 		padding:1em;
+        pointer-events: none;
 	}
 
-	/* .ctrls > div{
-		background:black;
+	.ctrls > div{
+        pointer-events: auto;
+		/* background:black;
 		color:white;
-		padding: .8em 1em;
-	} */
+		padding: .8em 1em; */
+    }
 </style>

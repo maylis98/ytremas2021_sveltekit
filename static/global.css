@@ -81,9 +81,15 @@
   | 2.0 FOUNDATION
   --------------------------------------------------------------*/
 
-  html { 
+  /* html { 
+    height: 100%;
     box-sizing: border-box; 
-    cursor: crosshair;}
+    cursor: crosshair;
+  }
+
+  body {
+    height: 100%;
+  } */
 
   *,
 *:before,
@@ -98,7 +104,6 @@ main {
   margin: 0 auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  
 }
 
 /*--------------------------------------------------------------

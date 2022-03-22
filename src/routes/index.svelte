@@ -24,21 +24,6 @@
   import ArrowNext from '../_components/medias/ArrowNext.svelte';
   import ArrowPrev from '../_components/medias/ArrowPrev.svelte';
 
-  // import { onMount } from 'svelte';
-
-  // onMount(() => {
-  //   const scrollContainer = document.querySelector(".carousel");
-
-  //   scrollContainer.addEventListener("wheel", (evt) => {
-  //       evt.preventDefault();
-  //       scrollContainer.scrollLeft += 5 * evt.deltaY;
-  //   });
-  // });
-
-  // function scrollLeft() {
-	// 	document.getElementByClass('.carousel').scrollLeft += 20;
-	// }
-
   const D = 40, PERCENT = 0.02;
 
   const progress = tweened(0, {
@@ -92,14 +77,6 @@
 
 <main bind:this={carousel_el}>
   <div class="logo-home"><Logo/></div>
-
-    <!-- <div on:pointerover={()=>{pointerIn(-1);}} on:pointerleave={pointerOut} class="arrow-left">
-      <ArrowPrev/>
-    </div>
-
-    <div on:pointerover={()=>{pointerIn(1);}} on:pointerleave={pointerOut} class="arrow-right">
-      <ArrowNext/>
-    </div> -->
 
     <Carousel>
     {#each projects_list as project}

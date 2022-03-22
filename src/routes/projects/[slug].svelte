@@ -72,10 +72,6 @@
       <p>{project.fonts}</p>
       <p>{project.format}</p>
       <p>{project.media}</p>
-      
-<!-- // boucle
-      <iframe width="560" height="315" src="{project.media}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
     </div>
   </div>
 </main>
@@ -117,7 +113,6 @@
 .project-carousel > iframe{
     height : 100%;
     position: relative;
-    flex-grow: 1;
     flex-shrink: 0;
     flex-basis: calc(100%/2);
 }

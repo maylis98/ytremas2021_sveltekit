@@ -9,8 +9,25 @@
   <link rel="stylesheet" href="/global.css">
 </svelte:head>
 
-<Header/>
-<PageTransition><slot></slot></PageTransition>
-<Footer/>
+<div class="root-wrap">
+  <Header/>
+  <PageTransition>
+    <main>
+      <slot></slot>
+    </main></PageTransition>
+  <Footer/>
+</div>
 
+<style>
+.root-wrap {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  box-sizing: border-box;
+}
 
+main {
+  flex: 1;
+}
+
+</style>
